@@ -1,11 +1,10 @@
-﻿<html>
-<head>
-    <title>Gummy Bear Kingdom</title>
-</head>
-<body>
-    <h2>Welcome Gummy Bear Kingdom</h2>
+﻿@{
+    ViewData["Title"] = "Travel Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<img class="splash "src="https://www.bulkcandystore.com/media/wysiwyg/Summer_Web_Cover_2017.png"/>
 
-    <p>@Html.ActionLink("View Products", "Index", "Products")</p>
-
-</body>
-</html>
+    <div class="purple">
+        <p>@Html.ActionLink("View Products", "Index", "Products")</p>
+    </div>

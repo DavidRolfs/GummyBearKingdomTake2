@@ -1,0 +1,53 @@
+﻿
+
+.navbar a {
+  color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+textarea {
+  width: 700px;
+}
+
+
+li {
+    float: right;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.logo{
+    width: 20%;
+    padding-left: 50px;
+}
+
+.nav-item{
+    font-size: 21px;
+    font-family: 'Comic Sans MS';
+    font-weight:bold;
+}
+
+.splash{
+    width: 100%;
+}
+
+.purple{
+    margin-top: -35px;
+    height:250px;
+    background-color:#44146f;
+    text-align: center;
+    font-size: 30px
+}
+.purple a{
+    color:white;
+}
+.light{
+    background-color: mediumpurple;
+}
+
+body{
+    background-color: mediumpurple;
+}

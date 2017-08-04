@@ -56,3 +56,17 @@ body{
     height:1000px;
     background-color: white;
 }
+
+.topbar{
+    height: 50px;
+    background-color: black;
+}
+
+.top{
+    color:white;
+    float: left;
+}
+
+.sslogo{
+    width: 50%;
+}

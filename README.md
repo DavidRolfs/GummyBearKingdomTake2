@@ -15,6 +15,9 @@ Gummy Bear Kingdom is a web side modeled after https://www.bulkcandystore.com/. 
 * Once downloaded open in visual studios. 
 * In the terminal enter this file path \Users\epicodus\Documents\Visual Studio 2015\Projects\GummyBearKingdom\src\GummyBearKingdom>
 * Enter > dotnet ef database update < into terminal to create database
+* Once database is created open SMSS
+* Select File > Open > File and select data.sql
+* Save the file and click "Execute" to populate the database
 * In Visual studios click IIS Express to run application
 ## Specs
 | Description |

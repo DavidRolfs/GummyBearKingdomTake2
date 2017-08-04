@@ -1,0 +1,44 @@
+﻿@model IEnumerable<GummyBearKingdom.Models.Product>
+
+
+<h2>Gummy Bear Kingdom</h2>
+<hr />
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Origin)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var listExperience in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => listExperience.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => listExperience.Cost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => listExperience.Origin)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = listExperience.ProductId }) |
+                @Html.ActionLink("Details", "Details", new { id = listExperience.ProductId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = listExperience.ProductId })
+            </td>
+        </tr>
+    }
+</table>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>

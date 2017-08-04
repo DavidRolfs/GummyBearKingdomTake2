@@ -4,14 +4,16 @@
     ViewData["Title"] = "Travel Blog";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<br />
 @model GummyBearKingdom.Models.Product
 
-
-<h2>Are you sure you want to delete this?</h2>
-<hr />
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
-@using (Html.BeginForm())
-{
-    <input type="submit" value="Delete" />
-}
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<div class="white">
+    <h2>Are you sure you want to delete this?</h2>
+    <hr />
+    @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+    @using (Html.BeginForm())
+    {
+        <input type="submit" value="Delete" />
+    }
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+ </div>

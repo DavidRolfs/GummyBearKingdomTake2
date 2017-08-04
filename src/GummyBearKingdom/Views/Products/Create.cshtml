@@ -1,0 +1,27 @@
+﻿
+@*@{
+    ViewData["Title"] = "Travel Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}*@
+
+@model GummyBearKingdom.Models.Product
+
+<h2>Add a New Candy</h2>
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+
+    @Html.LabelFor(model => model.Cost)
+    @Html.EditorFor(model => model.Cost)
+
+    @Html.LabelFor(model => model.Origin)
+    @Html.EditorFor(model => model.Origin)
+
+    <input type="submit" value="Create" class="btn btn-default" />
+}
+
+@Html.ActionLink("Back to List", "Index")
+
